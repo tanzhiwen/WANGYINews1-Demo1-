@@ -19,6 +19,7 @@
 		68EB500B1C99618B0074CABB /* TZWHeadLineViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 68EB500A1C99618B0074CABB /* TZWHeadLineViewController.m */; };
 		68EB500F1C9961E80074CABB /* TZWLoopView.m in Sources */ = {isa = PBXBuildFile; fileRef = 68EB500E1C9961E80074CABB /* TZWLoopView.m */; };
 		68EB50121C99648D0074CABB /* TZWLoopViewFlowLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 68EB50111C99648D0074CABB /* TZWLoopViewFlowLayout.m */; };
+		68EB50151C996A810074CABB /* TZWLoopViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 68EB50141C996A810074CABB /* TZWLoopViewCell.m */; };
 		B90B91C20A9CD118EA8D0A03 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 485C9287D2958ABB6D10875A /* libPods.a */; };
 /* End PBXBuildFile section */
 
@@ -65,6 +66,8 @@
 		68EB500E1C9961E80074CABB /* TZWLoopView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TZWLoopView.m; sourceTree = "<group>"; };
 		68EB50101C99648D0074CABB /* TZWLoopViewFlowLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TZWLoopViewFlowLayout.h; sourceTree = "<group>"; };
 		68EB50111C99648D0074CABB /* TZWLoopViewFlowLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TZWLoopViewFlowLayout.m; sourceTree = "<group>"; };
+		68EB50131C996A810074CABB /* TZWLoopViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TZWLoopViewCell.h; sourceTree = "<group>"; };
+		68EB50141C996A810074CABB /* TZWLoopViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TZWLoopViewCell.m; sourceTree = "<group>"; };
 		AECF6454C85DE69E47F14A31 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		BAF0737B628B6FC1B26023C9 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -187,6 +190,8 @@
 				68EB500E1C9961E80074CABB /* TZWLoopView.m */,
 				68EB50101C99648D0074CABB /* TZWLoopViewFlowLayout.h */,
 				68EB50111C99648D0074CABB /* TZWLoopViewFlowLayout.m */,
+				68EB50131C996A810074CABB /* TZWLoopViewCell.h */,
+				68EB50141C996A810074CABB /* TZWLoopViewCell.m */,
 			);
 			path = LoopView;
 			sourceTree = "<group>";
@@ -396,6 +401,7 @@
 				68EB4FD31C993FAF0074CABB /* AppDelegate.m in Sources */,
 				68EB500B1C99618B0074CABB /* TZWHeadLineViewController.m in Sources */,
 				68EB500F1C9961E80074CABB /* TZWLoopView.m in Sources */,
+				68EB50151C996A810074CABB /* TZWLoopViewCell.m in Sources */,
 				68EB4FD01C993FAF0074CABB /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

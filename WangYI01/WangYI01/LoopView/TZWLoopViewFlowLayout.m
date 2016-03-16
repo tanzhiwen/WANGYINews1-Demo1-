@@ -10,4 +10,21 @@
 
 @implementation TZWLoopViewFlowLayout
 
+
+//collectionView 的大小已经确定
+
+-(void)prepareLayout{
+    [super prepareLayout];
+    
+    self.itemSize=self.collectionView.bounds.size;
+    
+    self.minimumInteritemSpacing=0;
+    
+    self.minimumLineSpacing=0;
+    
+    self.scrollDirection=UICollectionViewScrollDirectionHorizontal;
+    
+    self.collectionView.pagingEnabled=YES;
+}
+
 @end
