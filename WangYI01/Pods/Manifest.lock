@@ -14,6 +14,7 @@ PODS:
   - AFNetworking/Serialization (3.0.4)
   - AFNetworking/UIKit (3.0.4):
     - AFNetworking/NSURLSession
+  - HMNSObject-Log (0.0.1)
   - Masonry (0.6.4)
   - SDWebImage (3.7.5):
     - SDWebImage/Core (= 3.7.5)
@@ -21,11 +22,13 @@ PODS:
 
 DEPENDENCIES:
   - AFNetworking
+  - HMNSObject-Log
   - Masonry
   - SDWebImage
 
 SPEC CHECKSUMS:
   AFNetworking: a0075feb321559dc78d9d85b55d11caa19eabb93
+  HMNSObject-Log: f3852e253594f301a2bd51e1d8fdf40fb08f909d
   Masonry: 281802d04d787ea2973179ee8bcb50500579ede2
   SDWebImage: 69c6303e3348fba97e03f65d65d4fbc26740f461
 

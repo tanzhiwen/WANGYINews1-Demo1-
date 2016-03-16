@@ -9,12 +9,16 @@
 /* Begin PBXBuildFile section */
 		68EB4FD01C993FAF0074CABB /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 68EB4FCF1C993FAF0074CABB /* main.m */; };
 		68EB4FD31C993FAF0074CABB /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 68EB4FD21C993FAF0074CABB /* AppDelegate.m */; };
-		68EB4FD61C993FAF0074CABB /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 68EB4FD51C993FAF0074CABB /* ViewController.m */; };
 		68EB4FD91C993FAF0074CABB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 68EB4FD71C993FAF0074CABB /* Main.storyboard */; };
 		68EB4FDB1C993FAF0074CABB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 68EB4FDA1C993FAF0074CABB /* Assets.xcassets */; };
 		68EB4FDE1C993FAF0074CABB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 68EB4FDC1C993FAF0074CABB /* LaunchScreen.storyboard */; };
 		68EB4FE91C993FAF0074CABB /* WangYI01Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 68EB4FE81C993FAF0074CABB /* WangYI01Tests.m */; };
 		68EB4FF41C993FAF0074CABB /* WangYI01UITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 68EB4FF31C993FAF0074CABB /* WangYI01UITests.m */; };
+		68EB50041C9950CE0074CABB /* TZWNetworkTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 68EB50031C9950CE0074CABB /* TZWNetworkTool.m */; };
+		68EB50081C9954C40074CABB /* TZWHeadLine.m in Sources */ = {isa = PBXBuildFile; fileRef = 68EB50071C9954C40074CABB /* TZWHeadLine.m */; };
+		68EB500B1C99618B0074CABB /* TZWHeadLineViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 68EB500A1C99618B0074CABB /* TZWHeadLineViewController.m */; };
+		68EB500F1C9961E80074CABB /* TZWLoopView.m in Sources */ = {isa = PBXBuildFile; fileRef = 68EB500E1C9961E80074CABB /* TZWLoopView.m */; };
+		68EB50121C99648D0074CABB /* TZWLoopViewFlowLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 68EB50111C99648D0074CABB /* TZWLoopViewFlowLayout.m */; };
 		B90B91C20A9CD118EA8D0A03 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 485C9287D2958ABB6D10875A /* libPods.a */; };
 /* End PBXBuildFile section */
 
@@ -41,8 +45,6 @@
 		68EB4FCF1C993FAF0074CABB /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		68EB4FD11C993FAF0074CABB /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		68EB4FD21C993FAF0074CABB /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		68EB4FD41C993FAF0074CABB /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		68EB4FD51C993FAF0074CABB /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		68EB4FD81C993FAF0074CABB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		68EB4FDA1C993FAF0074CABB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		68EB4FDD1C993FAF0074CABB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -53,6 +55,16 @@
 		68EB4FEF1C993FAF0074CABB /* WangYI01UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WangYI01UITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		68EB4FF31C993FAF0074CABB /* WangYI01UITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WangYI01UITests.m; sourceTree = "<group>"; };
 		68EB4FF51C993FAF0074CABB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		68EB50021C9950CE0074CABB /* TZWNetworkTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TZWNetworkTool.h; sourceTree = "<group>"; };
+		68EB50031C9950CE0074CABB /* TZWNetworkTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TZWNetworkTool.m; sourceTree = "<group>"; };
+		68EB50061C9954C40074CABB /* TZWHeadLine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TZWHeadLine.h; sourceTree = "<group>"; };
+		68EB50071C9954C40074CABB /* TZWHeadLine.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TZWHeadLine.m; sourceTree = "<group>"; };
+		68EB50091C99618B0074CABB /* TZWHeadLineViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TZWHeadLineViewController.h; sourceTree = "<group>"; };
+		68EB500A1C99618B0074CABB /* TZWHeadLineViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TZWHeadLineViewController.m; sourceTree = "<group>"; };
+		68EB500D1C9961E80074CABB /* TZWLoopView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TZWLoopView.h; sourceTree = "<group>"; };
+		68EB500E1C9961E80074CABB /* TZWLoopView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TZWLoopView.m; sourceTree = "<group>"; };
+		68EB50101C99648D0074CABB /* TZWLoopViewFlowLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TZWLoopViewFlowLayout.h; sourceTree = "<group>"; };
+		68EB50111C99648D0074CABB /* TZWLoopViewFlowLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TZWLoopViewFlowLayout.m; sourceTree = "<group>"; };
 		AECF6454C85DE69E47F14A31 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		BAF0737B628B6FC1B26023C9 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -108,10 +120,11 @@
 		68EB4FCD1C993FAF0074CABB /* WangYI01 */ = {
 			isa = PBXGroup;
 			children = (
+				68EB500C1C9961DC0074CABB /* LoopView */,
+				68EB50051C9954AC0074CABB /* HeadLine */,
+				68EB50011C99506A0074CABB /* Tool */,
 				68EB4FD11C993FAF0074CABB /* AppDelegate.h */,
 				68EB4FD21C993FAF0074CABB /* AppDelegate.m */,
-				68EB4FD41C993FAF0074CABB /* ViewController.h */,
-				68EB4FD51C993FAF0074CABB /* ViewController.m */,
 				68EB4FD71C993FAF0074CABB /* Main.storyboard */,
 				68EB4FDA1C993FAF0074CABB /* Assets.xcassets */,
 				68EB4FDC1C993FAF0074CABB /* LaunchScreen.storyboard */,
@@ -145,6 +158,37 @@
 				68EB4FF51C993FAF0074CABB /* Info.plist */,
 			);
 			path = WangYI01UITests;
+			sourceTree = "<group>";
+		};
+		68EB50011C99506A0074CABB /* Tool */ = {
+			isa = PBXGroup;
+			children = (
+				68EB50021C9950CE0074CABB /* TZWNetworkTool.h */,
+				68EB50031C9950CE0074CABB /* TZWNetworkTool.m */,
+			);
+			path = Tool;
+			sourceTree = "<group>";
+		};
+		68EB50051C9954AC0074CABB /* HeadLine */ = {
+			isa = PBXGroup;
+			children = (
+				68EB50061C9954C40074CABB /* TZWHeadLine.h */,
+				68EB50071C9954C40074CABB /* TZWHeadLine.m */,
+				68EB50091C99618B0074CABB /* TZWHeadLineViewController.h */,
+				68EB500A1C99618B0074CABB /* TZWHeadLineViewController.m */,
+			);
+			path = HeadLine;
+			sourceTree = "<group>";
+		};
+		68EB500C1C9961DC0074CABB /* LoopView */ = {
+			isa = PBXGroup;
+			children = (
+				68EB500D1C9961E80074CABB /* TZWLoopView.h */,
+				68EB500E1C9961E80074CABB /* TZWLoopView.m */,
+				68EB50101C99648D0074CABB /* TZWLoopViewFlowLayout.h */,
+				68EB50111C99648D0074CABB /* TZWLoopViewFlowLayout.m */,
+			);
+			path = LoopView;
 			sourceTree = "<group>";
 		};
 		879448599027FFADF96FACCF /* Frameworks */ = {
@@ -229,6 +273,7 @@
 		68EB4FC31C993FAF0074CABB /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				CLASSPREFIX = TZW;
 				LastUpgradeCheck = 0720;
 				ORGANIZATIONNAME = "ios檀志文";
 				TargetAttributes = {
@@ -345,8 +390,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				68EB4FD61C993FAF0074CABB /* ViewController.m in Sources */,
+				68EB50121C99648D0074CABB /* TZWLoopViewFlowLayout.m in Sources */,
+				68EB50081C9954C40074CABB /* TZWHeadLine.m in Sources */,
+				68EB50041C9950CE0074CABB /* TZWNetworkTool.m in Sources */,
 				68EB4FD31C993FAF0074CABB /* AppDelegate.m in Sources */,
+				68EB500B1C99618B0074CABB /* TZWHeadLineViewController.m in Sources */,
+				68EB500F1C9961E80074CABB /* TZWLoopView.m in Sources */,
 				68EB4FD01C993FAF0074CABB /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

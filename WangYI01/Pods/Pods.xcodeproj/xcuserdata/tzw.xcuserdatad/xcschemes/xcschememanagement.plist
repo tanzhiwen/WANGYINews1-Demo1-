@@ -9,6 +9,11 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>HMNSObject-Log.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>Masonry.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -27,6 +32,16 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
+		<key>160020B2320FD0FEAB07C2B3D37EC3A6</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>341A07059EA72590DDFC408E6CD8459B</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>53480ED0BE09FF49E34B1702D485CAAB</key>
 		<dict>
 			<key>primary</key>
@@ -37,12 +52,7 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>AEAEB1A077658C59BB892887A9213C39</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>F5C1A742D38F370F9734352B467BF360</key>
+		<key>AA556ED86D879FA24FFD7528F42C8404</key>
 		<dict>
 			<key>primary</key>
 			<true/>

@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  TZWLoopViewFlowLayout.h
 //  WangYI01
 //
 //  Created by 檀志文 on 16/3/16.
@@ -8,8 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
-
+@interface TZWLoopViewFlowLayout : UICollectionViewFlowLayout
 
 @end
-
