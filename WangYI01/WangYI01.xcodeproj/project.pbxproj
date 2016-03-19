@@ -8,6 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		6832B9751C9D01E700AFF166 /* TZWWeakTimerTarget.m in Sources */ = {isa = PBXBuildFile; fileRef = 6832B9741C9D01E700AFF166 /* TZWWeakTimerTarget.m */; };
+		68E3381A1C9DA82500C323DE /* TZWNews.m in Sources */ = {isa = PBXBuildFile; fileRef = 68E338191C9DA82500C323DE /* TZWNews.m */; };
+		68E3381D1C9DAC9300C323DE /* TZWNewsCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 68E3381C1C9DAC9300C323DE /* TZWNewsCell.m */; };
+		68E3381F1C9DB0E500C323DE /* News.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 68E3381E1C9DB0E500C323DE /* News.storyboard */; };
+		68E338221C9DB4E200C323DE /* TZWNewsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 68E338211C9DB4E200C323DE /* TZWNewsViewController.m */; };
 		68EB4FD01C993FAF0074CABB /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 68EB4FCF1C993FAF0074CABB /* main.m */; };
 		68EB4FD31C993FAF0074CABB /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 68EB4FD21C993FAF0074CABB /* AppDelegate.m */; };
 		68EB4FD91C993FAF0074CABB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 68EB4FD71C993FAF0074CABB /* Main.storyboard */; };
@@ -45,6 +49,13 @@
 		485C9287D2958ABB6D10875A /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		6832B9731C9D01E700AFF166 /* TZWWeakTimerTarget.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TZWWeakTimerTarget.h; sourceTree = "<group>"; };
 		6832B9741C9D01E700AFF166 /* TZWWeakTimerTarget.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TZWWeakTimerTarget.m; sourceTree = "<group>"; };
+		68E338181C9DA82500C323DE /* TZWNews.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TZWNews.h; sourceTree = "<group>"; };
+		68E338191C9DA82500C323DE /* TZWNews.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TZWNews.m; sourceTree = "<group>"; };
+		68E3381B1C9DAC9300C323DE /* TZWNewsCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TZWNewsCell.h; sourceTree = "<group>"; };
+		68E3381C1C9DAC9300C323DE /* TZWNewsCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TZWNewsCell.m; sourceTree = "<group>"; };
+		68E3381E1C9DB0E500C323DE /* News.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = News.storyboard; sourceTree = "<group>"; };
+		68E338201C9DB4E200C323DE /* TZWNewsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TZWNewsViewController.h; sourceTree = "<group>"; };
+		68E338211C9DB4E200C323DE /* TZWNewsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TZWNewsViewController.m; sourceTree = "<group>"; };
 		68EB4FCB1C993FAF0074CABB /* WangYI01.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WangYI01.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		68EB4FCF1C993FAF0074CABB /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		68EB4FD11C993FAF0074CABB /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -104,6 +115,13 @@
 		6832B9761C9D0BC100AFF166 /* News */ = {
 			isa = PBXGroup;
 			children = (
+				68E338181C9DA82500C323DE /* TZWNews.h */,
+				68E338191C9DA82500C323DE /* TZWNews.m */,
+				68E3381B1C9DAC9300C323DE /* TZWNewsCell.h */,
+				68E3381C1C9DAC9300C323DE /* TZWNewsCell.m */,
+				68E3381E1C9DB0E500C323DE /* News.storyboard */,
+				68E338201C9DB4E200C323DE /* TZWNewsViewController.h */,
+				68E338211C9DB4E200C323DE /* TZWNewsViewController.m */,
 			);
 			path = News;
 			sourceTree = "<group>";
@@ -336,6 +354,7 @@
 				68EB4FDE1C993FAF0074CABB /* LaunchScreen.storyboard in Resources */,
 				68EB4FDB1C993FAF0074CABB /* Assets.xcassets in Resources */,
 				68EB4FD91C993FAF0074CABB /* Main.storyboard in Resources */,
+				68E3381F1C9DB0E500C323DE /* News.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -412,11 +431,14 @@
 				68EB50081C9954C40074CABB /* TZWHeadLine.m in Sources */,
 				68EB50041C9950CE0074CABB /* TZWNetworkTool.m in Sources */,
 				68EB4FD31C993FAF0074CABB /* AppDelegate.m in Sources */,
+				68E3381D1C9DAC9300C323DE /* TZWNewsCell.m in Sources */,
+				68E3381A1C9DA82500C323DE /* TZWNews.m in Sources */,
 				6832B9751C9D01E700AFF166 /* TZWWeakTimerTarget.m in Sources */,
 				68EB500B1C99618B0074CABB /* TZWHeadLineViewController.m in Sources */,
 				68EB500F1C9961E80074CABB /* TZWLoopView.m in Sources */,
 				68EB50151C996A810074CABB /* TZWLoopViewCell.m in Sources */,
 				68EB4FD01C993FAF0074CABB /* main.m in Sources */,
+				68E338221C9DB4E200C323DE /* TZWNewsViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
