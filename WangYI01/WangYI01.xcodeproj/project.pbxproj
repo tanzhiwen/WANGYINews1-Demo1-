@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6832B9751C9D01E700AFF166 /* TZWWeakTimerTarget.m in Sources */ = {isa = PBXBuildFile; fileRef = 6832B9741C9D01E700AFF166 /* TZWWeakTimerTarget.m */; };
 		68EB4FD01C993FAF0074CABB /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 68EB4FCF1C993FAF0074CABB /* main.m */; };
 		68EB4FD31C993FAF0074CABB /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 68EB4FD21C993FAF0074CABB /* AppDelegate.m */; };
 		68EB4FD91C993FAF0074CABB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 68EB4FD71C993FAF0074CABB /* Main.storyboard */; };
@@ -42,6 +43,8 @@
 
 /* Begin PBXFileReference section */
 		485C9287D2958ABB6D10875A /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		6832B9731C9D01E700AFF166 /* TZWWeakTimerTarget.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TZWWeakTimerTarget.h; sourceTree = "<group>"; };
+		6832B9741C9D01E700AFF166 /* TZWWeakTimerTarget.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TZWWeakTimerTarget.m; sourceTree = "<group>"; };
 		68EB4FCB1C993FAF0074CABB /* WangYI01.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WangYI01.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		68EB4FCF1C993FAF0074CABB /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		68EB4FD11C993FAF0074CABB /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -98,6 +101,13 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		6832B9761C9D0BC100AFF166 /* News */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = News;
+			sourceTree = "<group>";
+		};
 		68EB4FC21C993FAF0074CABB = {
 			isa = PBXGroup;
 			children = (
@@ -123,6 +133,7 @@
 		68EB4FCD1C993FAF0074CABB /* WangYI01 */ = {
 			isa = PBXGroup;
 			children = (
+				6832B9761C9D0BC100AFF166 /* News */,
 				68EB500C1C9961DC0074CABB /* LoopView */,
 				68EB50051C9954AC0074CABB /* HeadLine */,
 				68EB50011C99506A0074CABB /* Tool */,
@@ -192,6 +203,8 @@
 				68EB50111C99648D0074CABB /* TZWLoopViewFlowLayout.m */,
 				68EB50131C996A810074CABB /* TZWLoopViewCell.h */,
 				68EB50141C996A810074CABB /* TZWLoopViewCell.m */,
+				6832B9731C9D01E700AFF166 /* TZWWeakTimerTarget.h */,
+				6832B9741C9D01E700AFF166 /* TZWWeakTimerTarget.m */,
 			);
 			path = LoopView;
 			sourceTree = "<group>";
@@ -399,6 +412,7 @@
 				68EB50081C9954C40074CABB /* TZWHeadLine.m in Sources */,
 				68EB50041C9950CE0074CABB /* TZWNetworkTool.m in Sources */,
 				68EB4FD31C993FAF0074CABB /* AppDelegate.m in Sources */,
+				6832B9751C9D01E700AFF166 /* TZWWeakTimerTarget.m in Sources */,
 				68EB500B1C99618B0074CABB /* TZWHeadLineViewController.m in Sources */,
 				68EB500F1C9961E80074CABB /* TZWLoopView.m in Sources */,
 				68EB50151C996A810074CABB /* TZWLoopViewCell.m in Sources */,

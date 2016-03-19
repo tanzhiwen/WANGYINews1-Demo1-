@@ -26,24 +26,46 @@
 
 @implementation TZWLoopView
 
+//-(instancetype)initwithurlStrss:(NSArray<NSString *>*)UrlStrs titles:(NSArray <NSString
+//*>*)titles{
+
 -(instancetype)initWithUrlStrs:(NSArray<NSString *>*)UrlStrs titles:(NSArray <NSString *>*)titles{
+//-(instancetype)initWithUrlStrs:(NSArray<NSString *>*)UrlStrs titles:(NSArray <NSString *>*)titles{    
     if (self=[super init]) {
         self.urlStrs=UrlStrs;
-        self.titles=titles;
-        
-//        设置页数
-        self.pageControl.numberOfPages=UrlStrs.count;
-        self.titleLabel.text=self.titles[0];
-        
+        self.titleLabel.text=titles[0];
         dispatch_async(dispatch_get_main_queue(), ^{
             if (self.urlStrs.count>1) {
                 [self.collectionView scrollToItemAtIndexPath:[NSIndexPath indexPathForItem:UrlStrs.count inSection:0] atScrollPosition:UICollectionViewScrollPositionLeft animated:NO];
             }
+            
         });
-        
     }
     return self;
 }
+//
+//-(instancetype)initWithUrlStrs:(NSArray<NSString *>*)UrlStrs titles:(NSArray <NSString *>*)titles{
+//    if (self=[super init]) {
+//        self.urlStrs=UrlStrs;
+//        self.titles=titles;
+//        
+////        设置页数
+//        self.pageControl.numberOfPages=UrlStrs.count;
+//        self.titleLabel.text=self.titles[0];
+//        
+//        dispatch_async(dispatch_get_main_queue(), ^{
+//            if (self.urlStrs.count>1) {
+//                [self.collectionView scrollToItemAtIndexPath:[NSIndexPath indexPathForItem:UrlStrs.count inSection:0] atScrollPosition:UICollectionViewScrollPositionLeft animated:NO];
+//            }
+//        });
+//        
+//    }
+//    return self;
+//}
+
+
+
+
 
 -(instancetype)initWithFrame:(CGRect)frame{
     if (self=[super initWithFrame:frame]) {
@@ -71,10 +93,6 @@
     [self addSubview:collectionView];
     self.collectionView = collectionView;
     
-
-    
-    
-    
     // 创建标题
     self.titleLabel = [[UILabel alloc] init];
     self.titleLabel.font = [UIFont systemFontOfSize:15];
@@ -91,6 +109,7 @@
 
 
 }
+
 
 - (void)layoutSubviews{
     [super layoutSubviews];
@@ -112,6 +131,13 @@
     self.titleLabel.frame=CGRectMake(marginX, pageY, titleW, titleH);
 }
 
+
+
+
+
+
+
+
 #pragma mark - 数据源方法
 
 
@@ -126,6 +152,8 @@
 }
 
 
+
+//计算页号
 -(void)scrollViewDidEndDecelerating:(UIScrollView *)scrollView{
     NSInteger page=scrollView.contentOffset.x/scrollView.bounds.size.width;
     
