@@ -9,6 +9,7 @@
 #import "TZWLoopView.h"
 #import "TZWLoopViewFlowLayout.h"
 #import "TZWLoopViewCell.h"
+#import "TZWWeakTimerTarget.h"
 
 @interface TZWLoopView()<UICollectionViewDataSource,UICollectionViewDelegate>
 
@@ -22,46 +23,37 @@
 
 @property (nonatomic, strong) NSArray *titles;
 
+// 定时器
+@property (nonatomic, strong) NSTimer *timer;
+
+// 选中回调block
+@property (nonatomic, copy) void (^didSelected)(NSInteger index);
+
 @end
 
 @implementation TZWLoopView
 
-//-(instancetype)initwithurlStrss:(NSArray<NSString *>*)UrlStrs titles:(NSArray <NSString
-//*>*)titles{
 
--(instancetype)initWithUrlStrs:(NSArray<NSString *>*)UrlStrs titles:(NSArray <NSString *>*)titles{
-//-(instancetype)initWithUrlStrs:(NSArray<NSString *>*)UrlStrs titles:(NSArray <NSString *>*)titles{    
+
+-(instancetype)initWithUrlStrs:(NSArray<NSString *>*)UrlStrs titles:(NSArray <NSString *>*)titles didSelected:(void (^)(NSInteger index))didSelected{   
     if (self=[super init]) {
         self.urlStrs=UrlStrs;
+        self.titles=titles;
+        self.didSelected=didSelected;
+        self.pageControl.numberOfPages=UrlStrs.count;
         self.titleLabel.text=titles[0];
         dispatch_async(dispatch_get_main_queue(), ^{
             if (self.urlStrs.count>1) {
                 [self.collectionView scrollToItemAtIndexPath:[NSIndexPath indexPathForItem:UrlStrs.count inSection:0] atScrollPosition:UICollectionViewScrollPositionLeft animated:NO];
+//                添加定时器
+                [self addTimer];
             }
             
         });
     }
     return self;
 }
-//
-//-(instancetype)initWithUrlStrs:(NSArray<NSString *>*)UrlStrs titles:(NSArray <NSString *>*)titles{
-//    if (self=[super init]) {
-//        self.urlStrs=UrlStrs;
-//        self.titles=titles;
-//        
-////        设置页数
-//        self.pageControl.numberOfPages=UrlStrs.count;
-//        self.titleLabel.text=self.titles[0];
-//        
-//        dispatch_async(dispatch_get_main_queue(), ^{
-//            if (self.urlStrs.count>1) {
-//                [self.collectionView scrollToItemAtIndexPath:[NSIndexPath indexPathForItem:UrlStrs.count inSection:0] atScrollPosition:UICollectionViewScrollPositionLeft animated:NO];
-//            }
-//        });
-//        
-//    }
-//    return self;
-//}
+
 
 
 
@@ -106,6 +98,8 @@
     // 如果只有一页 则隐藏分页指示器
     self.pageControl.hidesForSinglePage = YES;
     [self addSubview:self.pageControl];
+    // 设置默认时间 默认值2
+    self.timerInterval = 2;
 
 
 }
@@ -132,12 +126,6 @@
 }
 
 
-
-
-
-
-
-
 #pragma mark - 数据源方法
 
 
@@ -158,12 +146,63 @@
     NSInteger page=scrollView.contentOffset.x/scrollView.bounds.size.width;
     
     if (page==0||page==([self.collectionView numberOfItemsInSection:0]-1)) {
-        page=self.urlStrs.count;
+        page=self.urlStrs.count-((page==0)?0:1);
+        self.collectionView.contentOffset=CGPointMake(page*scrollView.bounds.size.width, 0);
+        
     }
-    self.collectionView.contentOffset=CGPointMake(page*scrollView.bounds.size.width, 0);
+//    设置标题
+//    NSLog(@"%d",self.titles.count);
     
-    self.titleLabel.text=self.titles[page%self.titles.count];
+    self.titleLabel.text=self.titles[page % self.titles.count];
     self.pageControl.currentPage=page%self.urlStrs.count;
+}
+
+/**
+ *  当用户开始拖拽时调用
+ */
+
+/**
+ *  创建定时器
+ */
+-(void)addTimer {
+    self.timer=[TZWWeakTimerTarget scheduledTimerWithTimerInterval:self.timerInterval target:self selector:@selector(nextImage) userInfo:nil repeats:YES];
+    [[NSRunLoop currentRunLoop] addTimer:self.timer forMode:NSRunLoopCommonModes];
+}
+                   
+    /**
+     *  定时器回调方法
+     */
+- (void)nextImage {
+// 获得当前显示的页号
+NSInteger page = self.collectionView.contentOffset.x / self.collectionView.bounds.size.width;
+// 计算偏移量
+CGFloat offsetX = (page + 1) * self.collectionView.bounds.size.width;
+// 设置偏移量
+[self.collectionView setContentOffset:CGPointMake(offsetX, 0) animated:YES];
+}
+                   
+                   
+/**
+ *  移除定时器
+ */
+- (void)removeTimer {
+    [self.timer invalidate];
+    self.timer = nil;
+}
+
+- (void)scrollViewWillBeginDragging:(UIScrollView *)scrollView {
+    [self removeTimer];
+}
+
+/**
+ *  当用户结束拖拽时调用
+ */
+- (void)scrollViewWillEndDragging:(UIScrollView *)scrollView withVelocity:(CGPoint)velocity targetContentOffset:(inout CGPoint *)targetContentOffset {
+    [self addTimer];
+}
+
+- (void)scrollViewDidEndScrollingAnimation:(UIScrollView *)scrollView {
+    [self scrollViewDidEndDecelerating:scrollView];
 }
 
 

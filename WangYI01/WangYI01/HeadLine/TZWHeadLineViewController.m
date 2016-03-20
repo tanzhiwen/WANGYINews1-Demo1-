@@ -20,7 +20,10 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     [TZWHeadLine loadHeadLinesSuccess:^(NSArray *headLines) {
-        TZWLoopView *loopView=[[TZWLoopView alloc]initWithUrlStrs:[headLines valueForKeyPath:@"imgsrc"] titles:[headLines valueForKeyPath:@"title"]];
+//        TZWLoopView *loopView=[[TZWLoopView alloc]initWithUrlStrs:[headLines valueForKeyPath:@"imgsrc"] titles:[headLines valueForKeyPath:@"title"]];
+        TZWLoopView *loopView=[[TZWLoopView alloc]initWithUrlStrs:[headLines valueForKeyPath:@"imgsrc"] titles:[headLines valueForKeyPath:@"title"] didSelected:^(NSInteger index) {
+            
+        }];
         
         //设置frame
         

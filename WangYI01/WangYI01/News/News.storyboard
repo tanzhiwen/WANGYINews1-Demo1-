@@ -14,9 +14,16 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <containerView key="tableHeaderView" opaque="NO" contentMode="scaleToFill" id="VeT-Ut-Syb">
+                            <rect key="frame" x="0.0" y="0.0" width="320" height="260"/>
+                            <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                            <connections>
+                                <segue destination="bYf-GG-wb6" kind="embed" id="2ZO-3A-0zS"/>
+                            </connections>
+                        </containerView>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="news" rowHeight="145" id="uYi-jw-8W3" customClass="TZWNewsCell">
-                                <rect key="frame" x="0.0" y="28" width="320" height="145"/>
+                                <rect key="frame" x="0.0" y="288" width="320" height="145"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="uYi-jw-8W3" id="V8b-nC-8zq">
                                     <rect key="frame" x="0.0" y="0.0" width="320" height="144.5"/>
@@ -75,7 +82,7 @@
                                 </connections>
                             </tableViewCell>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="bigImageCell" rowHeight="259" id="1j2-8B-YXP" customClass="TZWNewsCell">
-                                <rect key="frame" x="0.0" y="173" width="320" height="259"/>
+                                <rect key="frame" x="0.0" y="433" width="320" height="259"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="1j2-8B-YXP" id="Z0U-bk-idl">
                                     <rect key="frame" x="0.0" y="0.0" width="320" height="258.5"/>
@@ -126,7 +133,7 @@
                                 </connections>
                             </tableViewCell>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="threeImagesCell" rowHeight="132" id="Ld5-Dj-i7i" customClass="TZWNewsCell">
-                                <rect key="frame" x="0.0" y="432" width="320" height="132"/>
+                                <rect key="frame" x="0.0" y="692" width="320" height="132"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Ld5-Dj-i7i" id="Bj6-rc-7el">
                                     <rect key="frame" x="0.0" y="0.0" width="320" height="131.5"/>
@@ -198,6 +205,20 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="c3o-Xc-Jsa" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="158" y="284"/>
+        </scene>
+        <!--Head Line View Controller-->
+        <scene sceneID="E9e-uR-upD">
+            <objects>
+                <viewController id="bYf-GG-wb6" customClass="TZWHeadLineViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="2gb-sg-qb8">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="260"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ww1-FD-WoW" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="571" y="54"/>
         </scene>
     </scenes>
 </document>

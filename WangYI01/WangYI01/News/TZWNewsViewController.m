@@ -27,7 +27,7 @@
 
 - (void)setURLString:(NSString *)URLString{
     _URLString=URLString;
-    [TZWNews loadNewsWithUrlString:URLString success:^(NSArray *news) {
+    [TZWNews loadNewsWithUrlString:self.URLString success:^(NSArray *news) {
         NSLog(@"news=%@",news);
         self.news=news;
         //刷新表格
@@ -54,6 +54,9 @@
     NSString *ID=[TZWNewsCell cellIDWithNews:news];
     
     TZWNewsCell *cell=[tableView dequeueReusableCellWithIdentifier:ID];
+    
+    cell.news=news;
+    
     return cell;
 }
 

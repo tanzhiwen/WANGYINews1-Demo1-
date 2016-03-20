@@ -8,6 +8,13 @@
 
 #import <UIKit/UIKit.h>
 
+
+typedef enum {
+    TZWTitlePositionBlowImage, //  标题在图片下面
+    TZWTitlePositionAboveImage, // 标题在图片上面
+} TZWTitlePosition;
+
+
 @interface TZWLoopView : UIView
 
 /**
@@ -17,9 +24,14 @@
  *  @param titles  标题数组
  */
 
--(instancetype)initWithUrlStrs:(NSArray<NSString *>*)UrlStrs titles:(NSArray <NSString *>*)titles;
+-(instancetype)initWithUrlStrs:(NSArray<NSString *>*)UrlStrs titles:(NSArray <NSString *>*)titles didSelected:(void (^)(NSInteger index))didSelected;
+
+/**
+ *  时间间隔
+ */
+@property (nonatomic, assign) NSInteger timerInterval;
 
 
-
-
+// 标题的位置
+@property (nonatomic, assign) TZWTitlePosition titlePosition;
 @end
